@@ -1,5 +1,13 @@
-"use strict";
+const message = document.querySelector('.form__message--js');
+const load = document.querySelector('.form__button--load--js');
+const save = document.querySelector('.form__button--save--js');
 
-import moment from 'moment';
+save.addEventListener('click', (e)=>{
+    e.preventDefault();
+    localStorage.setItem('message', message.value);
+})
 
-console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
+load.addEventListener('click', (e)=>{
+    e.preventDefault();
+    message.value = localStorage.getItem('message');
+})

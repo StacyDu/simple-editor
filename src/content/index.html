@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,25 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <h1>Hello world!</h1>
-  
+  <main class="main">
+    <h1 class="header">Simple Editor</h1>
+    <form class="form">
+      <p class="form__wrapper">
+        <label for="message" class="form__label">Your text</label>
+        <textarea id="message" class="form__message form__message--js">
+
+        </textarea>
+      </p>
+      <div class="form__actions">
+        <button class="form__button form__button--load form__button--load--js">Load</button>
+        <button class="form__button form__button--save form__button--save--js">Save</button>
+      </div>
+    </form>
+  </main>
+
   <script src="js/main.js"></script>
 </body>
+
 </html>
